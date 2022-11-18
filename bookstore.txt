@@ -1,0 +1,129 @@
+package Storage;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Library {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner s = new Scanner(System.in);
+library Mylibrary =new Library;
+ do {
+	 System.out.println();
+	System.out.println("Add a Book TO THE STOCK");
+	System.out.println("List the title of all the books in store");
+	System.out.println("List all the books by title");
+	System.out.println("Quit");
+	System.out.println();
+	Switch {
+		System.out.println("Enter a book Title");
+		
+	String bt = s.next();
+	if (Library.instock(title.X))
+	{
+		System.out.println("Hom many more to store in stocks");
+		x  =s.nextInt();
+		Library.addBookQuantity(bt,x);	
+	}
+	else
+	{
+		System.out.println("Enter the amount of pages of the Book");
+		int pages = s.nextInt();
+		Library.addNewBook(book);	
+	}
+	break;
+	Case2:
+		System.out.println("Enter book title to buy:");
+	String bookT = s.next();
+	Library.sellBook(title, x);
+	break;
+	Case3:
+		Library.listTitle();
+	break;
+	Case4:System.out.println("Thanks for visisting our Library");
+	quit = True;
+	break;
+	System.out.println("Invalid selection");
+	}
+ }
+ while (quit);	 
+	}
+Static Class Library {
+	private Book[] books;
+	private int totalBooks;
+	public void addNewBook(Book a) {
+		if (totalBooks < books.length) {
+			books[totalBooks] = a;
+			totalBooks++;
+		}
+		else {
+			System.out.println("Cannnot add book to in Library");
+		}
+	}
+	public void addBookQuantity(String title, int quantity) {
+		for(int i=0; i<totalBooks; i++) {
+			if (title == books[i].getTitle()) {
+				books[i].addQuantity(quantity);
+				System.out.println("Qunatity added Successfully");
+				return;					
+			}
+		}
+	}
+	public boolean instock(String title, int quantity) {
+		for (int i =0; i<totalBooks; i++) {
+			if (title.equals(books[i].getQuantity())
+			else {return false;}
+		}
+	}
+	return false;
+	
+		}
+Public void listTitles()
+{
+	for (int i=0; i < totalbooks; i++)
+	{
+		System.out.println(book[i].gettitle());
+	}
+}
+public void Listbooks()
+{
+	int i;
+	System.out.println("List of books");
+	for (i =0; i < totalbooks; i++)
+	{
+		System.out.println(books[i]);
+	}
+	System.out.println();	
+}
+}
+static class Book{
+	private String title;
+	private int numOfPages;
+	private int quantity;
+	private Book book;
+	public String toString() {
+		return "Title: " + title + numOfPages + quantity + ;
+		}
+}
+public Book book(String thetitle, int pages,iny num,) {
+	return book;
+}
+public String getTitle() {
+	return title;
+}
+public int getQuantity() {
+	return quantity;
+}
+public void addQuantity(int amount) {
+	quantity = quantity + amount;
+}
+public void subtractQuantity(int amount)
+{
+	System.out.println("amount to buy);"
+			Scanner s = new Scanner(System.in);
+			quantity= s.nextInt();
+			quantity = quantity -amount;
+}
+}
+			
+}
